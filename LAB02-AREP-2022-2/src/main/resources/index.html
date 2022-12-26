@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+<h2>HTML Forms</h2>
+<form action="/stockService">
+    Stock:
+    <br />
+    <input type="text" name="stock" value="MSFT" />
+    <br/>
+    Time Series:
+    <br />
+    <select name="Time Series">
+        <option value="INTRA-DIA">Intra-Dia</option>
+        <option value="DIARIA">Diaria</option>
+        <option value="SEMANAL">Semanal</option>
+        <option value="MENSUAL">Mensual</option>
+    </select>
+    <br /><br />
+    <input type="submit" value="Submit" />
+</form>
+<p>
+    If you click the Submit button, the form-data will be sent to a page
+    called results.
+</p>
+</body>
+</html>

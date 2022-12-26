@@ -1,0 +1,93 @@
+/* Vars */
+
+:root {
+    --textArea-widht: 80%;
+    --body-backgroun-color: black;
+    --textarea-margin: 10%;
+}
+
+/* General */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--body-backgroun-color);
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
+/* Page wrapper*/
+
+div.wrappper {
+    width: 500px;
+    margin: 2% 0% 2% 5%;
+    padding-bottom: 2%;
+    border-style: solid;
+    border-width: 0.1rem;
+    overflow-y: auto;
+}
+
+/* Posts - textarea */
+
+textarea.userPost {
+    width: var(--textArea-widht);
+    height: 11%;
+    margin-left: var(--textarea-margin);
+    padding: 2% 0% 2% 5%;
+    border-collapse: collapse;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-width: 0.2rem;
+    resize: none;
+    color: white;
+    background-color: black;
+}
+
+/* Dividers - hr */
+hr.divider {
+    width: var(--textArea-widht);
+    background-color: rgb(100, 100, 100);
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+
+div.create-thread-container {
+    margin-right: var(--textarea-margin);
+    display: flex;
+    justify-content: right;
+}
+
+button#converToThreadButton {
+    color: #007bff;
+    background-color: var(--body-backgroun-color);
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    text-decoration-line: underline;
+}
+
+button#publishButton {
+    margin-left: var(--textarea-margin);
+    margin-top: 0.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: black;
+    border-collapse: collapse;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 0.1rem;
+}
